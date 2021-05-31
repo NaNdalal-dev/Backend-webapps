@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Bg</title>
+<script>
+	function body_bg_color() {
+		var color =  document.getElementById("color").value;
+		document.getElementById("bg").style.background = color;
+		document.getElementById("color_value").innerHTML = color
+	}
+</script>
+</head>
+
+<body id="bg" bgcolor="#ffffff">
+	<center>
+
+		<input type="color" name="color" value="select a color" id="color" oninput="body_bg_color()">
+		<label for="color">Select the color</label>
+		
+		<h4>
+			Selected Color: <p id="color_value"></p>
+		</h4>
+
+	</center>
+</body>
+
+</html>
